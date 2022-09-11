@@ -238,9 +238,14 @@ nav ul{
 }
 
 
-@media(max-width:316px){
+@media(max-width:298px){
 .content{
   width: 70%;
 }
+
+nav ul{
+    
+  flex: 3.5;
+ }
 }
 
