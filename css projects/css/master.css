@@ -237,3 +237,10 @@ nav ul{
 }
 }
 
+
+@media(max-width:316px){
+.content{
+  width: 70%;
+}
+}
+
