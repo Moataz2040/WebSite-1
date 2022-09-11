@@ -95,6 +95,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: flex-start;
   height: 90vh;
+  flex-wrap: wrap;
 }
 h1 span {
   color: #27ab83;
@@ -113,6 +114,7 @@ h1 span {
   color: #243b53;
   font-size: 1.6rem;
   text-decoration: none;
+
 }
 .btn:hover {
   background: #28d09e;
@@ -219,7 +221,12 @@ nav ul{
     
  flex: 3;
 }
+#btx {
+  bottom: 50px;
 }
+
+}
+
 @media(min-width:768px){
 nav ul{
     
