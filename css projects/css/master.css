@@ -83,7 +83,9 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  margin-top: -250px;
 }
+
 .content {
   width: 90%;
   margin: 0%;
