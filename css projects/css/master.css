@@ -83,7 +83,6 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  margin-top: -250px;
 }
 
 .content {
@@ -249,5 +248,12 @@ nav ul{
     
   flex: 3.5;
  }
+}
+
+@media(min-width:939px){
+.hero-section::after{
+  margin-top: -100px;
+
+  }
 }
 
