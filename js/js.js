@@ -1,5 +1,17 @@
+/*nav js*/
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+/*nav js end*/
+
+/*scroll button js*/
 let btf = document.getElementById("btx");
-let con = document.getElementById("cont");
 
 onscroll = function () {
   if (scrollY >= 100) {
@@ -16,6 +28,4 @@ btf.onclick = function () {
     behavior: "smooth",
   });
 };
-
-console.log(screen.width);
-
+/*scroll button js end*/
