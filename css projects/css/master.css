@@ -66,13 +66,18 @@ nav ul li {
   display: flex;
   align-items: center;
 }
-nav ul li:hover {
+nav ul a:hover,
+nav ul a:focus {
   color: rgb(3, 2, 2);
-  background-color: #ffffff66;
+  background-color: #2196f3;
+  border-top: solid 3px #8bc34a;
 }
 nav ul li a {
   color: #f0f4f8;
   text-decoration: none;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
 }
 /*nav end*/
 /*section1*/

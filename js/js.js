@@ -8,6 +8,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+
+let a = document.querySelector("a")
+
+let li = document.querySelector("li")
+
+li.hover =function(){
+if(li.style.backgroundColor ==="ffffff66"){
+a.style.setProperty("color","black")
+}
+}
 /*nav js end*/
 
 /*scroll button js*/
