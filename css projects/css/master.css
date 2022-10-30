@@ -67,7 +67,7 @@ nav ul li {
   align-items: center;
 }
 nav ul a:hover,
-nav ul a:focus {
+nav ul a:focus{
   color: rgb(3, 2, 2);
   background-color: #2196f3;
   border-top: solid 3px #8bc34a;
@@ -82,7 +82,7 @@ nav ul li a {
 /*nav end*/
 /*section1*/
 .hero-section {
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -146,7 +146,7 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-height: 50vh;
+  min-height: 100vh;
   height: 100%;
 }
 .quality-container {
@@ -169,6 +169,9 @@ h1 span {
   color: black;
   font-size: 2.2rem;
 }
+#wall{
+  margin-left: 20px;
+}
 /*section2 end*/
 
 /*section3*/
@@ -180,7 +183,7 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-height: 50vh;
+  min-height: 100vh;
   height: 100%;
 }
 .quality-container-2 {
@@ -202,6 +205,9 @@ h1 span {
 .quality-2 h3 {
   color: white;
   font-size: 2.2rem;
+}
+#wall-2{
+  margin-left: 20px;
 }
 /*section3 end*/
 
@@ -231,6 +237,7 @@ form .btn {
   width: 100px;
   align-self: center;
   margin: 1rem;
+  cursor: pointer;
 }
 input,
 textarea {
@@ -260,6 +267,7 @@ textarea {
   position: fixed;
   display: none;
 }
+
 /*scroll button end*/
 
 /*footer*/
@@ -302,6 +310,9 @@ footer p {
   nav ul {
     flex: 3.5;
   }
+  #home{
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 939px) {
@@ -310,3 +321,8 @@ footer p {
   }
 }
 /*Responsive end*/
+
+.your-active-class{
+  background-color: rgb(48 24 142 / 23%);
+  border-radius: 20px;
+}
