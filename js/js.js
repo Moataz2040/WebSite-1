@@ -43,6 +43,35 @@ li1.appendChild(a1);
 li2.appendChild(a2);
 li3.appendChild(a3);
 
+ul.id = "ulMain"
+
+const navBarList = document.getElementById("ulMain");
+
+// select All Section With An Attribute "[data-nav]" //
+const dataNav = document.querySelectorAll("[data-nav]");
+
+// Creat a Fragment //
+const fragment = document.createDocumentFragment();
+
+// A for loop to loop over and Create navlink for every section //
+for (let i = 4; i < dataNav.length; i++) {
+  const navDataName = dataNav[i].getAttribute("data-nav");
+
+  const newList = document.createElement("li");
+  const newLink = document.createElement("a");
+  newLink.href = `#${dataNav[i].getAttribute("id")}` 
+  newList.appendChild(newLink);
+  newList.classList.add(`liNav`);
+  newLink.textContent = navDataName;
+  console.log(newLink.href);
+  fragment.appendChild(newList);
+}
+
+// Add the created "fragment" to the "ul" Element //
+navBarList.appendChild(fragment);
+
+// end1
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -81,8 +110,8 @@ let sections = document.querySelectorAll("section");
 
 let active = addEventListener('scroll', function () {
   
- // const section = sections[i]
- // let sectionTop = section.geyBoundingClientRect().top
+  //const section = sections[i]
+ // let sectionTop = section.getBoundingClientRect().top
   
   if (scrollY >= 10 && scrollY < 200) {
 
@@ -103,7 +132,8 @@ let active = addEventListener('scroll', function () {
 }
 )
 window.onscroll = function () {
-  console.log(scrollY)
+  //console.log(scrollY)
   scrollA();
 };
+
 
